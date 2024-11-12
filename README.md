@@ -1,6 +1,6 @@
 # The React Router
 
-# Class Structure: React Router and Client-Side Routing
+## Class Structure: React Router and Client-Side Routing
 
 ## Learning Objectives
 

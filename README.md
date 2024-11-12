@@ -134,6 +134,29 @@ export const ProductDetail = () => {
 
 - Remember to import useParams from react-router-dom and use it within a component that is rendered by a Route that includes route parameters.
 
+# My Approach to Creating Pages!
+
+Here’s the **Diego Way** to efficiently add new pages to your React app using React Router, keeping everything organized and avoiding errors during development:
+
+### 1. Define the Route in `routes.jsx`
+
+- Start by adding a new route in `routes.jsx` for the page you want to create.
+- Leave the component’s `element` empty for now to prevent any rendering errors, especially with **Hot Module Replacement (HMR)**. Adding a comment here as a placeholder can also be helpful.
+
+### 2. Create the Component
+
+- Now, create the actual component for your new page, matching the name used in the route.
+- Once it’s ready, go back to `routes.jsx` and link this new component to the previously defined route by embedding it inside the `element` attribute.
+
+### 3. Add the Route to Your App’s Navigation
+
+- To make this page accessible in your app, add a link to the new route in your navigation bar or main menu.
+- Use a React Router link component to allow users to navigate to this new page.
+
+---
+
+By following these steps, you can smoothly integrate each new page into the app’s navigation, avoid hot-reload issues, and maintain clean, organized code. That’s the **Diego Way** to setting up routes effectively! 🚀
+
 # React Router Exercise: Rolling Stones' Top 500 Songs
 
 Welcome to this lesson's exercise! We'll be diving into react-router-dom and harnessing the useParams() hook.

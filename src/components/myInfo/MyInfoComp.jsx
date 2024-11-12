@@ -1,6 +1,9 @@
+// MyInfoComp.jsx - This component displays a static paragraph of placeholder text, representing user information or a bio.
+
 export const MyInfoComp = () => {
   return (
     <p>
+      {/* Placeholder text, typically used as a bio or description */}
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sit
       voluptates quidem culpa dolor ad nobis quibusdam dignissimos labore vero
       nihil, exercitationem perferendis qui deleniti maxime, soluta cum voluptas
@@ -15,3 +18,7 @@ export const MyInfoComp = () => {
     </p>
   );
 };
+
+// Summary:
+// The MyInfoComp component is a simple functional component that renders placeholder text.
+// This static content could represent user information or a personal bio in a real application.

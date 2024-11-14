@@ -20,7 +20,8 @@ export const SongLists = ({ title }) => {
           <li key={song.rank}>
             {/* Link to the SongInfo page for each song, using a URL-friendly version of the title */}
             <Link to={`/song/${song.title.toLowerCase().replace(/ /g, "-")}`}>
-              {song.title} - {song.artist}
+              {song.title.toLowerCase().replace(/ /g, "-")}
+              {/* {song.title} - {song.artist} */}
             </Link>
           </li>
         ))}

@@ -17,8 +17,11 @@ export const Movies = () => {
     const fetchMovies = async () => {
       try {
         // API call to fetch popular movies data
+        // const response = await fetch(
+        //   `https://api.themoviedb.org/3/movie/popular?api_key=${apiEnv}&language=en-US&page=1`
+        // );
         const response = await fetch(
-          `https://api.themoviedb.org/3/movie/popular?api_key=${apiEnv}&language=en-US&page=1`
+          `https://api.themoviedb.org/3/discover/movie?api_key=${apiEnv}&language=en-US&page=1`
         );
 
         // Check if response is successful; throw an error if not
@@ -28,6 +31,8 @@ export const Movies = () => {
 
         // Parse JSON data and set it to the movies state
         const json = await response.json();
+        console.log(json);
+
         setMovies(json.results);
       } catch (error) {
         // Log any errors encountered during fetching
